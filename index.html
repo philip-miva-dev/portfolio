@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Philip Ojetoye – Software Engineering student and web developer at Miva Open University."
+    />
+    <title>Home | Philip Ojetoye</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Philip Ojetoye</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+        <nav id="mainNav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="kicker">Welcome to my portfolio</p>
+            <h1>Hello, I'm Philip Ojetoye.</h1>
+            <p class="lead">
+              I build websites, backends and server setups, and I'm learning
+              software engineering one level at a time.
+            </p>
+            <div class="btn-row">
+              <a class="btn" href="projects.html">See my projects</a>
+              <a class="btn btn-ghost" href="contact.html">Contact me</a>
+            </div>
+          </div>
+          <figure class="hero-photo">
+            <img
+              src="images/profile.jpeg"
+              alt="Passport photograph of Philip Ojetoye"
+              onerror="
+                this.onerror = null;
+                this.src = 'images/placeholder.svg';
+              "
+            />
+            <figcaption>Philip Ojetoye, Benin City</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container two-col">
+          <div>
+            <h2>Brief biography</h2>
+            <p>
+              I am a 27-year-old, married 100-level Software Engineering student
+              at Miva Open University, based in Benin City, Edo State, Nigeria.
+              I work as a software engineer and web developer, and I also direct
+              projects that turn web development, backend management and digital
+              technology into tools people can use.
+            </p>
+            <p>
+              My studies and my work feed each other: what I learn in class, I
+              try out on real projects.
+            </p>
+          </div>
+          <aside class="fact-card" aria-label="Quick facts">
+            <h3>Quick facts</h3>
+            <ul class="facts">
+              <li><strong>Programme:</strong> B.Sc. Software Engineering</li>
+              <li><strong>Level:</strong> 100 (May intake)</li>
+              <li><strong>University:</strong> Miva Open University</li>
+              <li><strong>Location:</strong> Benin City, Nigeria</li>
+              <li><strong>Role:</strong> Software Engineer, Web Developer</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year">2026</span> Philip Ojetoye. COS 106 Term
+          Project, Miva Open University.
+        </p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

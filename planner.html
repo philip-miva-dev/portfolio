@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Philip Ojetoye – Software Engineering student and web developer at Miva Open University."
+    />
+    <title>Academic Planner | Philip Ojetoye</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Philip Ojetoye</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+        <nav id="mainNav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html" class="active">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-title">
+        <div class="container">
+          <h1>Academic planner</h1>
+          <p>
+            Add your tasks, tick them off, and delete them when you are done.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <div class="planner-form">
+            <label for="taskInput">New task</label>
+            <div class="row">
+              <input
+                type="text"
+                id="taskInput"
+                placeholder="e.g. Finish COS 106 term project"
+                maxlength="120"
+              />
+              <button class="btn" id="addBtn" type="button">Add task</button>
+            </div>
+            <p class="error" id="taskError" role="alert"></p>
+          </div>
+          <p class="counter" id="counter" aria-live="polite"></p>
+          <ul id="taskList" class="task-list"></ul>
+          <p class="empty" id="emptyMsg">
+            No tasks yet. Add your first task above.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year">2026</span> Philip Ojetoye. COS 106 Term
+          Project, Miva Open University.
+        </p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/planner.js"></script>
+  </body>
+</html>

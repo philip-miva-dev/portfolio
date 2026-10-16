@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Philip Ojetoye – Software Engineering student and web developer at Miva Open University."
+    />
+    <title>Projects | Philip Ojetoye</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Philip Ojetoye</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+        <nav id="mainNav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="planner.html">Academic Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-title">
+        <div class="container">
+          <h1>Projects and practical work</h1>
+          <p>Things I have built and set up.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Web and platform projects</h2>
+          <div class="card-grid">
+            <article class="card project">
+              <img
+                src="images/project-quiz.jpeg"
+                alt="Screenshot of the School Quiz App"
+                onerror="
+                  this.onerror = null;
+                  this.src = 'images/placeholder.svg';
+                "
+              />
+              <h3>School Quiz App</h3>
+              <p>
+                An interactive web app that generates quiz questions and study
+                materials using the Gemini API.
+              </p>
+              <a
+                class="btn btn-small"
+                href="https://quiz.milivaca.xyz/quizapp_v2/login.html"
+                target="_blank"
+                rel="noopener"
+                >Visit live site</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <h2>Hardware, solar and media setups</h2>
+          <ul class="list">
+            <li>
+              <strong>Off-grid solar system:</strong> 330W panels, MPPT
+              controllers, 220Ah batteries and pure sine wave inverters.
+            </li>
+            <li>
+              <strong>Router and network management:</strong> admin settings and
+              bandwidth control on Airtel 5G SmartConnect hardware.
+            </li>
+            <li>
+              <strong>2D animation and media:</strong> vector rigging in Moho
+              Pro, voice processing in Applio/RVC, video editing in CapCut.
+            </li>
+          </ul>
+          <h3>Project demo video</h3>
+          <video controls preload="metadata" poster="images/project-quiz.jpeg">
+            <source src="media/demo.mp4" type="video/mp4" />
+            Your browser does not support the video element.
+          </video>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year">2026</span> Philip Ojetoye. COS 106 Term
+          Project, Miva Open University.
+        </p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
